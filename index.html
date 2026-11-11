@@ -42,7 +42,7 @@
     } 
     #foot{
         overflow: hidden;
-        background-color: #333;
+        background-color: #183361;
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -52,14 +52,51 @@
     #form-box {
         position: relative;
         z-index: 1;
-        width: 650px;
+        width: 1500px;
+        height: auto;
         padding: 30px;
         border: 1px solid white;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.75);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-        #fname{
+    #fname{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    #lname{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    #date{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    #GL{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    #gender{
         display: block;
         width: 100%;
         padding: 10px;
@@ -140,6 +177,7 @@
         <div id="bg">
 
     <div class="container d-flex justify-content-center">
+        
 
         <div id="form-box">
 
@@ -149,19 +187,83 @@
 
             <form>
 
-            <label for="fname"> Full Name</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter Name">
+            <div class="row">
 
-            <label for="Email"> Email</label>
-            <input type="email" id="Email" name="Email" placeholder="Enter Email">
+                <div class="col-md-6">
+  
+                <label for="fname"> Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Lebron">
 
-            <label for="subj">Subject</label>
-            <input type="text" id="subj" name="subj" placeholder="Enter Subject">
+                </div>
 
-            <label for="mess">Message</label>
-            <textarea type="text" id="mess" name="mess" placeholder="Enter Message"></textarea>
+                <div class="col-md-6">
+  
+                <label for="lname"> Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="James">
 
-            <button type="button" id="btn" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+  
+                <label for="date">Birthday</label>
+                <input type="date" id="date" name="date">
+
+                </div>
+
+                <div class="col-md-4">
+  
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                </div>
+
+                <div class="col-md-4">
+  
+                <label for="GL">Grade Level</label>
+                <select id="GL" name="GL">
+                    <option value="">Select Grade</option>
+                    <option value="Grade 7">Grade 7</option>
+                    <option value="Grade 8">Grade 8</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                </select>
+
+                </div>
+
+            </div>
+
+
+            <div>
+            
+            <h2>Contact Details</h2>
+
+                <label for="Email"> Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter Email">
+
+                <label for="subj">Subject</label>
+                <input type="text" id="subj" name="subj" placeholder="Enter Subject">
+
+                <label for="mess">Message</label>
+                <textarea type="text" id="mess" name="mess" placeholder="Enter Message"></textarea>
+
+            </div>
+
+            <div class="container d-flex justify-content-center">
+
+                <button type="button" id="btn" class="btn btn-primary">Submit</button>
+
+            </div>
 
             </form>
 
@@ -170,7 +272,7 @@
 
 <footer class="footer" id="foot">
     <p> 2026 OBMC.</p>
-    <p>Contact | About | Enroll Now</p>
+    <p>Contact | About | Enroll</p>
 </footer>
 
 </body>
