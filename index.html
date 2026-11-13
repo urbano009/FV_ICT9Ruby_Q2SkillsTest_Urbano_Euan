@@ -132,6 +132,14 @@
         border: 1px solid gray;
         border-radius: 5px;
     }
+    #submit{
+        position: relative;
+        width: 150px;
+        height: 70px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+    }
     </style>
 
 </head>
@@ -191,7 +199,7 @@
 
                 <div class="col-md-6">
   
-                <label for="fname"> Full Name</label>
+                <label for="fname"> First Name</label>
                 <input type="text" id="fname" name="fname" placeholder="Lebron">
 
                 </div>
@@ -209,7 +217,7 @@
 
                 <div class="col-md-4">
   
-                <label for="date">Birthday</label>
+                <label for="date">Birth Date</label>
                 <input type="date" id="date" name="date">
 
                 </div>
@@ -231,6 +239,12 @@
                 <label for="GL">Grade Level</label>
                 <select id="GL" name="GL">
                     <option value="">Select Grade</option>
+                    <option value="Grade 7">Grade 1</option>
+                    <option value="Grade 8">Grade 2</option>
+                    <option value="Grade 9">Grade 3</option>
+                    <option value="Grade 10">Grade 4</option>
+                    <option value="Grade 11">Grade 5</option>
+                    <option value="Grade 12">Grade 6</option>
                     <option value="Grade 7">Grade 7</option>
                     <option value="Grade 8">Grade 8</option>
                     <option value="Grade 9">Grade 9</option>
@@ -249,19 +263,36 @@
             <h2>Contact Details</h2>
 
                 <label for="Email"> Email</label>
-                <input type="email" id="Email" name="Email" placeholder="Enter Email">
+                <input type="email" id="Email" name="Email" placeholder="student@example.com">
 
-                <label for="subj">Subject</label>
-                <input type="text" id="subj" name="subj" placeholder="Enter Subject">
+                <label for="subj">Contact Number</label>
+                <input type="text" id="subj" name="subj" placeholder="987-654-3210">
 
-                <label for="mess">Message</label>
-                <textarea type="text" id="mess" name="mess" placeholder="Enter Message"></textarea>
+
+            </div>
+
+            <div>
+
+            <h2>Other Information</h2>
+
+                <input type="checkbox" name="f2f">
+                <label for="f2f">Face-to-Face</label>
+
+                <br>
+
+                <input type="checkbox" name="online">
+                <label for="online">Online</label>
+
+                <br><br>
+
+                <input type="checkbox" name="confirm">
+                <label for="confirm">I confirm that the information provided is true and legitimate</label>
 
             </div>
 
             <div class="container d-flex justify-content-center">
 
-                <button type="button" id="btn" class="btn btn-primary">Submit</button>
+                <button id="submit" type="button" id="btn" class="btn btn-primary">Submit Form</button>
 
             </div>
 
